@@ -32,6 +32,7 @@ for _ in range(n):
     _x, _y = map(int, input().split())
     graph.append([get_distance(_x, _y, x, y), _x, _y, d])
 
+graph.sort()
 answer = 0
 for i in range(n):
     solve(i)
